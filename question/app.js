@@ -1,6 +1,6 @@
 // Q1
-let nickname = 'kanata';
-let age = 23;
+const nickname = 'kanata';
+const age = 23;
 console.log('私のニックネームは' + nickname + 'です。年齢は' + age + '歳です。');
 // Q2
 let language = ['JavaScript', 'PHP', 'Python', 'Ruby', 'Go'];
