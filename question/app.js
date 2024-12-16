@@ -56,16 +56,16 @@ let calc = {
     console.log(a + b);
   },
   subtract: function (a, b) {
-    console.log( a - b);
+    console.log(a - b);
   },
   multiply: function (a, b) {
-    console.log( a * b);
+    console.log(a * b);
   },
   divide: function (a, b) {
     if (b === 0) {
       return;
     }
-    console.log( a / b);
+    console.log(a / b);
   },
 };
 calc.add(4, 3);
@@ -80,3 +80,40 @@ const remainder = function (x, y) {
 console.log('5を3で割った余りは' + remainder(5, 3) + 'です。');
 //Q10
 //スコープ内で定義されている変数をスコープ外から参照しようとしているため、参照不可
+
+// javascript 応用編問題
+// Q1
+console.log(Math.floor(Math.random() * 10));
+
+//Q2
+setTimeout(function () {
+  console.log('Hello, World!');
+}, 3000);
+
+//Q3
+num = -3;
+if (num > 0) {
+  console.log('num is greater than 0');
+} else if (num === 0) {
+  console.log('num is 0');
+} else {
+  console.log('num is less than 0');
+}
+
+//Q4
+let numbers = [];
+for (let i = 0; i < 100; i++) {
+  numbers.push(i);
+}
+console.log(numbers);
+
+//Q5
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+
+for (let i = 0; i < mixed.length; i++) {
+  if (typeof (mixed[i]) === 'number') {
+    console.log(mixed[i] % 2 === 0 ? 'even' : 'odd');
+  } else {
+    console.log('not number');
+  }
+}
