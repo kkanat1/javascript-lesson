@@ -33,7 +33,9 @@ let playerList = [
 ];
 console.log(playerList[1].favorites[1]);
 // Q5
-console.log((playerList[0].age + playerList[1].age + playerList[2].age) / 3);
+// console.log((playerList[0].age + playerList[1].age + playerList[2].age) / 3);
+const averageAge = playerList.reduce((total, player) => total + player.age, 0) / playerList.length;
+console.log(averageAge);
 
 // Q6
 function sayHello() {
